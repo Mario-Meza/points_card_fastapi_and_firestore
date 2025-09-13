@@ -1,0 +1,24 @@
+### Obtener todos las tarjetas
+GET http://127.0.0.1:8000/api/v1/tarjeta/
+Accept: application/json
+
+### Filtrar tarjeta
+GET http://127.0.0.1:8000/api/v1/tarjeta/?telefono=711974893
+Accept: application/json
+
+### Obtener una Tarjeta por documento
+GET http://127.0.0.1:8000/api/v1/tarjeta/Ipt0o83Ybpo9UVmRtPYK
+Accept: application/json
+
+### Crear una nueva tarjeta
+POST http://127.0.0.1:8000/api/v1/tarjeta/
+Content-Type: application/json
+Accept: application/json
+
+{
+    "nombre": "Clareth",
+    "puntos": 20,
+    "telefono": "7296958390",
+    "status": "Inactiva",
+    "fecha_creacion": "2025-09-10T22:15:00.000Z"
+}
